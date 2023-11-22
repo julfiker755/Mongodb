@@ -37,6 +37,7 @@ Evaluation query operator
 }]
 ```
 ```js
+//example for code
 use('Pratic')
 db.Monthbaget.find({
     $expr:{
