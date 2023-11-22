@@ -1,13 +1,13 @@
 > Comparison Query Operator
 
- [$in: In Operator](#1$in:-In-Operator)
-$nin: Not In Operator
-$eq:Equal to Operator
-$ne: Not Squal Ta Operater
-$gt: Greater Than Operator
-$gte: Greater Than or Equal To Operator
-$lt: Less Than Operator
-$lte:Less Than or Equel To Operetor
+1. [$in: In Operator](#1$in:-In-Operator)
+2. $nin: Not In Operator
+3. $eq:Equal to Operator
+4. $ne: Not Squal Ta Operater
+5. $gt: Greater Than Operator
+6. $gte: Greater Than or Equal To Operator
+7. $lt: Less Than Operator
+8. $lte:Less Than or Equel To Operetor
 
 
 ## 1. $in: In Operator
