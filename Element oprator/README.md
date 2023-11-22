@@ -1,3 +1,5 @@
+> Element query Oprator
+
 ```sh
 $exists: Matches documents that have the specified filed
 $type: Selects documents if a field is of the specified type
@@ -9,7 +11,7 @@ db.brands. find({
 country: {$exists:true}
 })
 ```
-> ## Git Branch Commands
+
 | Type | Number | Alias
 | ----------- | ------------ | ------------ | 
 | Double | 1 | "double" |
