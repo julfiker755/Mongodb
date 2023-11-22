@@ -24,3 +24,8 @@ db.data.find().limit(2)
 // all data last 2 data limt
 db.data.find().sort({_id:-1}).limit(2)
 ```
+```js
+use('Pratic')
+db.Monthbaget.distinct("_id")
+```
+
