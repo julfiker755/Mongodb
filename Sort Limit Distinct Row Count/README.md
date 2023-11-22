@@ -16,5 +16,5 @@ db.data.find().sort({
 ```js
 // total count data
 db.data.find().count('total')
-  const result=await  database.estimatedDocumentCount()
+const result=await  database.estimatedDocumentCount()
 ```
