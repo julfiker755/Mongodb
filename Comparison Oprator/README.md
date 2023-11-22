@@ -1,6 +1,6 @@
 > Comparison Query Operator
-```sh
-$in: In Operator
+
+ [$in: In Operator](#1$in:-In-Operator)
 $nin: Not In Operator
 $eq:Equal to Operator
 $ne: Not Squal Ta Operater
@@ -8,10 +8,11 @@ $gt: Greater Than Operator
 $gte: Greater Than or Equal To Operator
 $lt: Less Than Operator
 $lte:Less Than or Equel To Operetor
-```
+
+
+## 1. $in: In Operator
 
 ```js
-// $in: In Operator
 db.employee.find(
     {
         salary:{$in:[4000,500,600]}
