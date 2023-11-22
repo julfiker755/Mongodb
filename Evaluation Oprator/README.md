@@ -41,7 +41,16 @@ Evaluation query operator
 use('Pratic')
 db.Monthbaget.find({
     $expr:{
-        $gt:["$spent","$budget"]
+        $lt:["$budget","$spent"]
+    }
+}).toArray()
+```
+```js
+//example for code
+use('Pratic')
+db.Monthbaget.find({
+    $expr:{
+        $gt:["$budget","$spent"]
     }
 }).toArray()
 
