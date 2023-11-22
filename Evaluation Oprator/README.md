@@ -8,4 +8,4 @@ Evaluation query operator
 4. $text
 5. $where
 
-# 1. expression query
+# 1. Expression query
