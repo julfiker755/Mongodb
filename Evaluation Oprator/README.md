@@ -36,3 +36,12 @@ Evaluation query operator
   "spent": 300
 }]
 ```
+```js
+use('Pratic')
+db.Monthbaget.find({
+    $expr:{
+        $gt:["$spent","$budget"]
+    }
+}).toArray()
+
+```
