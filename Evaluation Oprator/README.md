@@ -9,7 +9,7 @@ Evaluation query operator
 5. $where
 
 # 1. Expression query
-``js
+```js
 [{
   "category": "food",
   "budget": 500,
@@ -35,4 +35,4 @@ Evaluation query operator
   "budget": 250,
   "spent": 200
 }]
-``
+```
