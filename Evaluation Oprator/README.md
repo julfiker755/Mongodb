@@ -13,7 +13,7 @@ Evaluation query operator
 [{
   "category": "food",
   "budget": 500,
-  "spent": 380
+  "spent": 600
 },
 {
   "category": "pizza",
@@ -33,6 +33,6 @@ Evaluation query operator
 {
   "category": "sup",
   "budget": 250,
-  "spent": 200
+  "spent": 300
 }]
 ```
