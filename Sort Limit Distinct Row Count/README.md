@@ -25,7 +25,7 @@ db.data.find().limit(2)
 db.data.find().sort({_id:-1}).limit(2)
 ```
 ```js
-use('Pratic')
+// spesifik kono nme,data,id ber kora jay
 db.Monthbaget.distinct("_id")
 ```
 
