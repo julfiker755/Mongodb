@@ -6,12 +6,12 @@ Allows use of aggregation expressions within the query language.
 Validate documents against the given JSON Schema.
 
 3. $mod
-Performs a modulo operation on the value of a field and selects documents with a specified result.
+ Performs a modulo operation on the value of a field and selects documents with a specified result.
 
 5. $regex
-Selects documents where values match a specified regular expression.
+ Selects documents where values match a specified regular expression.
 
 4. $text
-Performs text search.
+ Performs text search.
 5. $where
-Matches documents that satisfy a JavaScript expression.
+ Matches documents that satisfy a JavaScript expression.
