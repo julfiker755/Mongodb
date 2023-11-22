@@ -19,7 +19,7 @@ country: {$exists:true}
 | git checkout -b [branch name] | Create a new branch and switch to it |
 | git checkout - | Switch to the branch last checked out |
 | git checkout [branch name] | Switch to a branch |
-|
+
 
 ```js
 use( 'Shop')
