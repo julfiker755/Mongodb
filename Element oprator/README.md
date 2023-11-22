@@ -10,8 +10,8 @@ country: {$exists:true}
 })
 ```
 > ## Git Branch Commands
-| Command | Description |
-| ----------- | ------------ |
+| Command | Description | type
+| ----------- | ------------ | ------------ | 
 | git branch | List branches (the asterisk denotes the current branch) |
 | git branch [branch name] | Create a new branch |
 | git branch -d [branch name]| Delete a branch |
