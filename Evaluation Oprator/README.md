@@ -4,9 +4,7 @@ Evaluation query operator
 1. [$expr](#1-expression-query)
 2. [$mod](#2-modulus-query)
 3. [$regex](#3-regex-query)
-4. $jsonSchema
-4. $text
-5. $where
+3. [$where](#4-where-query)
 
 # 1. Expression query
 ```js
@@ -73,3 +71,13 @@ db.data.find({
 }).toArray()
 
 ```
+# 4. where query
+```js
+// flow the your json data
+use('Pratic')
+db.Monthbaget.find({
+    $where:"this.budget>this.spent"
+},{_id:0}).toArray()
+
+```
+
