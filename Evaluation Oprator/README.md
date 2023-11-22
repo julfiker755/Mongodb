@@ -37,7 +37,7 @@ Evaluation query operator
 }]
 ```
 ```js
-//example for code   budget < spent
+//example for code   =budget < spent
 use('Pratic')
 db.Monthbaget.find({
     $expr:{
@@ -46,12 +46,21 @@ db.Monthbaget.find({
 }).toArray()
 ```
 ```js
-//example for code budget > spent
+//example for code =budget > spent
 use('Pratic')
 db.Monthbaget.find({
     $expr:{
         $gt:["$budget","$spent"]
     }
 }).toArray()
+
+```
+# 2. Modulus query
+```js
+//example for code  =vakses man 0 
+use('Pratic')
+db.Monthbaget.find({
+    budget:{$mod:[500,0]}
+}.toArray()
 
 ```
