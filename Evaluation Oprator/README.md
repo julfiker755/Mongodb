@@ -2,6 +2,7 @@ Evaluation query operator
 
 ## Table of Contents
 1. [$expr](#1-expression-query)
+
 2 .$jsonSchema
 3. $mod
 5. $regex
