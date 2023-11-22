@@ -3,8 +3,8 @@ Evaluation query operator
 ## Table of Contents
 1. [$expr](#1-expression-query)
 2. [$mod](#2-modulus-query)
-3. $jsonSchema
-5. $regex
+3. [$regex](#3-regex-query)
+4. $jsonSchema
 4. $text
 5. $where
 
@@ -57,10 +57,19 @@ db.Monthbaget.find({
 ```
 # 2. Modulus query
 ```js
-//example for code  =vakses man 0 
+//example for code  =vakses value 0 
 use('Pratic')
 db.Monthbaget.find({
     budget:{$mod:[500,0]}
 }.toArray()
+
+```
+# 3. Regex query
+```js
+//example for code  = spesifik search,name,graminphone number,robi number
+use('Pratic')
+db.data.find({
+   name:{$regex:'018'}
+}).toArray()
 
 ```
