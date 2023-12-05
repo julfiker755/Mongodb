@@ -225,6 +225,29 @@ db.products.aggregate([
 {$lookup:{from: "categories",localField:"CategoryID", foreignField:"CategoryID", as: "catDetails"}},
 {$lookup: {from: "brands",localField: "BrandID", foreignField: "BrandID", as: "brandDetails"}}
 ])
+
+
+// projection after join
+db.products.aggregate([
+{$lookup:{from: "categories",localField:"CategoryID", foreignField:"CategoryID", as: "catDetails"}},
+{$lookup: {from: "brands",localField: "BrandID", foreignField: "BrandID", as: "brandDetails"}},
+{
+$project: {
+id:0,
+CategoryID:1,
+BrandID: 1,
+ProductName: "$Name"
+Price: {$toDouble: "$Price"},
+Unit:1,
+Details: 1,
+CreatedDate: 1,
+ProductID: 1,
+CategoryName: {$first: "$Category.Name"},
+BrandName: {$first: "$Brand. Name"}
+}
+}
+])
+
 ```
 # 13. facet operator
 
