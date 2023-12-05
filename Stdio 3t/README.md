@@ -239,4 +239,15 @@ db.products.aggregate([
 }
 ])
 
+
+//  facet operator use database
+db. products.aggregate([
+{
+$facet:{
+"total":[{$count: "total"}],
+"data" : []
+}
+}
+])
+
 ```
