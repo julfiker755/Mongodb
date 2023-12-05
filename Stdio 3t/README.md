@@ -152,6 +152,8 @@ db.products.find({},{_id: 0, name: 1, designation: 1})
 db.employee.aggregate([
 {$project: {_id: 0, name: 1, designation: 1}}
 ])
+```
+
 # 10. skip limit
 
 ```js
