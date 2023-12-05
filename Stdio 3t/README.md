@@ -125,6 +125,12 @@ db.employee.aggregate([
 # 8. Select by match in
 
 ```js
-// Select like
+// Select by match in
+db.products.find({name: ($in: ['Rabbil', 'Rain']}})
 
+//Mongobd aggregate use
+db.products.aggregate ( [
+{$match: {name: {$in:["Rabbil","Rain"]}}}
+
+])
 ```
