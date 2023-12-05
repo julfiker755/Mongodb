@@ -2,6 +2,7 @@
 1. [Mongobd insert](#1-mongobd-insert)
 2. [Select all data](#2-mongobd-find)
 3. [Row Count](#3-mongobd-row-count)
+4. [sorting](#4-mongobd-sorting)
 
 
 # 1. Mongobd insert
@@ -41,5 +42,11 @@ db.barand.find({}).count('total')
 db.barand.aggregate([
 {$count:'total'}
 ])
+
+```
+# 4. Mongobd Sorting
+
+```js
+//Mongobd sorting
 
 ```
