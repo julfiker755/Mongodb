@@ -178,7 +178,7 @@ db. employee.aggregate([
 
 // Group By SUM
 db. employee. aggregate([
-{$group: {_id: "$city", total: {$sum: "$salary"}}}
+{$group:{_id: "$city", total:{$sum:"$salary"}}}
 ])
 
 ```
