@@ -5,6 +5,7 @@
 4. [sorting](#4-mongobd-sorting)
 5. [limit](#5-Mongobd-limit)
 6. [Select by match condition and or](#6-match-condition)
+7. [Select like](#6-Select-like)
 
 
 # 1. Mongobd insert
@@ -106,4 +107,17 @@ db.employee.aggregate([
  ]}}
 ])
 
+```
+
+# 7. Select like
+
+```js
+// Select like
+db.employee.find({designation:/Engineer/})
+
+
+// Mongobd aggregate use
+db.employee.aggregate([
+{$match: {designation:/Engineer/}}
+])
 ```
