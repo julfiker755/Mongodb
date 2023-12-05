@@ -36,4 +36,5 @@ db.barand.aggregate([])
 // Mongobd find/aggregate row count
 
 db.barand.find({}).count('total')
+db.barand.estimatedDocumentCount()
 ```
