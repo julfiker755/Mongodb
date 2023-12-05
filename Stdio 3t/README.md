@@ -214,9 +214,15 @@ db.employee.aggregate
 # 12. Lookup
 
 ```js
-// join by lookup operator
+// join by lookup operator demo
 db.products.aggregate([
 {$lookup: {from: "categories", localField: "CategoryID", foreignField: "CategoryID", as: "Category"}},
+])
+
+// Join By lookup operator
+db.products.aggregate([
+{$lookup:{from: "categories",localField:"CategoryID", foreignField:"CategoryID", as: "catDetails"}},
+{$lookup: {from: "brands",localField: "BrandID", foreignField: "BrandID", as: "brandDetails"}}
 ])
 
 ```
