@@ -10,6 +10,7 @@
 9. [Projection](#9-Projection)
 10. [skip,limit](#10-skip-limit)
 11. [Group](#11-group)
+12. [lookup](#12-lookup)
 
 
 # 1. Mongobd insert
@@ -208,4 +209,14 @@ db.employee.aggregate
       }
    }
 ])
+```
+
+# 12. Lookup
+
+```js
+// join by lookup operator
+db.products.aggregate([
+{$lookup: {from: "categories", localField: "CategoryID", foreignField: "CategoryID", as: "Category"}},
+])
+
 ```
