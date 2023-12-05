@@ -82,22 +82,24 @@ db.employee.find({
         ]
 })
 
+
 // Mongobd aggregate use
-db. employee.aggregate(
+db.employee.aggregate(
 [
 {$match: {salary:{$gt:40000}}}, 
 {$match:{city: "Dhaka"}}
 ]
 )
 
-db. employee.aggregate([
+// nested use --
+db.employee.aggregate([
 {$match: {$and: [
         {salary: {$gt:40000}},
         {city: 'Dhaka'},
  ]}}
 ])
 
-db. employee.aggregate([
+db.employee.aggregate([
 {$match: {$or: [
         {salary: {$gt:40000}},
         {city: 'Dhaka'},
