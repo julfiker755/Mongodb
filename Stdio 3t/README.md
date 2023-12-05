@@ -200,11 +200,11 @@ db.employee.aggregate
 [
 {$group:
   {
-    _id: {designation: "$designation", city: "$city"},
-    avg: {$avg: "$salary"},
-   sum: {$sum:"$salary"},
-   max: {$max:"$salary"}, 
-   min: {$min: "$salary"},
+     _id: {designation: "$designation", city: "$city"},
+      avg: {$avg: "$salary"},
+     sum: {$sum:"$salary"},
+     max: {$max:"$salary"}, 
+     min: {$min: "$salary"},
       }
    }
 ])
