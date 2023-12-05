@@ -7,6 +7,7 @@
 6. [Select by match condition and or](#6-match-condition)
 7. [Select like](#7-Select-like)
 8. [select by match in](#8-Select-by-match-in)
+9. [Projection](#9-Projection)
 
 
 # 1. Mongobd insert
