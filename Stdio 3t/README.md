@@ -3,7 +3,8 @@
 2. [Select all data](#2-mongobd-find)
 3. [Row Count](#3-mongobd-row-count)
 4. [sorting](#4-mongobd-sorting)
-4. [limit](#5-Mongobd-limit)
+5. [limit](#5-Mongobd-limit)
+6. [Select by match condition and or](#6-match-condition)
 
 
 # 1. Mongobd insert
@@ -65,6 +66,40 @@ db.Monthbaget.find({}).limit(2)
 //Mongobd aggregate  use
 db.Monthbaget.aggregate([
 {$limit:3}
+])
+
+# 6. Match condition
+
+```js
+// Select by match condition and or
+
+db.employee.find({
+    $and: [
+        {salary: {$gt:40000}},
+        {city: 'Dhaka'},
+        ]
+})
+
+// Mongobd aggregate use
+db. employee.aggregate(
+[
+{$match: {salary:{$gt:40000}}}, 
+{$match:{city: "Dhaka"}}
+]
+)
+
+db. employee.aggregate([
+{$match: {$and: [
+        {salary: {$gt:40000}},
+        {city: 'Dhaka'},
+ ]}}
+])
+
+db. employee.aggregate([
+{$match: {$or: [
+        {salary: {$gt:40000}},
+        {city: 'Dhaka'},
+ ]}}
 ])
 
 ```
