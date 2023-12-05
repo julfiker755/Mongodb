@@ -134,3 +134,21 @@ db.products.aggregate ( [
 
 ])
 ```
+# 9. Projection
+
+```js
+//  Projection
+const options = {
+      sort: { "imdb.rating": -1 },
+      projection: { _id: 0, title: 1, imdb: 1 },
+    };
+
+db.products.find({},options)
+db.products.find({},{_id: 0, name: 1, designation: 1})
+
+//Mongobd aggregate use
+db.employee.aggregate([
+{$project: {_id: 0, name: 1, designation: 1}}
+])
+
+```
