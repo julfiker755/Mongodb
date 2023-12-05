@@ -9,6 +9,7 @@
 8. [select by match in](#8-Select-by-match-in)
 9. [Projection](#9-Projection)
 10. [skip,limit](#10-skip-limit)
+11. [Group](#11-group)
 
 
 # 1. Mongobd insert
@@ -164,6 +165,20 @@ db.products.find({}).skip (0*3).limit (3)
 db.products.aggregate ([
 {$skip: 0},
 {$limit:3}
+])
+
+```
+# 11. group
+
+```js
+// group
+db. employee.aggregate([
+{$group:{_id: "$city"}}
+])
+
+// Group By SUM
+db. employee. aggregate([
+{$group: {_id: "$city", total: {$sum: "$salary"}}}
 ])
 
 ```
