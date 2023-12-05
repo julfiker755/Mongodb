@@ -11,6 +11,7 @@
 10. [skip,limit](#10-skip-limit)
 11. [Group](#11-group)
 12. [lookup](#12-lookup)
+13. [Facet-operator](#13-facet-operator)
 
 
 # 1. Mongobd insert
@@ -223,6 +224,19 @@ db.products.aggregate([
 db.products.aggregate([
 {$lookup:{from: "categories",localField:"CategoryID", foreignField:"CategoryID", as: "catDetails"}},
 {$lookup: {from: "brands",localField: "BrandID", foreignField: "BrandID", as: "brandDetails"}}
+])
+```
+# 13. facet operator
+
+```js
+ //  facet operator demo working
+db.products.aggregate([
+{ $facet:
+     {
+         "A": [{}],
+         "В": [{}]
+       }
+}
 ])
 
 ```
