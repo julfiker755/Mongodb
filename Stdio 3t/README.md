@@ -194,4 +194,18 @@ db.employee.aggregate([
 db.employee.aggregate([
 {$group: {_id: "$city", totalmin: {$min: "$salary"}}}
 ])
+
+// group by multiple
+db.employee.aggregate
+[
+{$group:
+  {
+    _id: {designation: "$designation", city: "$city"},
+    avg: {$avg: "$salary"},
+   sum: {$sum:"$salary"},
+   max: {$max:"$salary"}, 
+   min: {$min: "$salary"},
+      }
+   }
+])
 ```
