@@ -1,10 +1,10 @@
 ## Table of Contents
-1. [Mongobd insert](###1-mongobd-insert)
-2. [Select all data](###2-mongobd-find)
-3. [Row Count](###3-mongobd-row-count)
+1. [Mongobd insert](#1-mongobd-insert)
+2. [Select all data](#2-mongobd-find)
+3. [Row Count](#3-mongobd-row-count)
 
 
-### 1. Mongobd insert
+# 1. Mongobd insert
 
 ```js
 // Mongobd insert/insertone/insertMany
@@ -19,7 +19,7 @@ db.foods.insertMany({[
 ]})
 
 ```
-### 2. Mongobd find
+# 2. Mongobd find
 
 ```js
 // Mongobd find/aggregate
@@ -30,7 +30,7 @@ db.barand.aggregate([])
 
 ```
 
-### 3. Mongobd Row Count
+# 3. Mongobd Row Count
 
 ```js
 // Mongobd find/aggregate row count
