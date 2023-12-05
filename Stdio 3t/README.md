@@ -185,4 +185,13 @@ db. employee. aggregate([
 db. employee. aggregate([
 {$group: {_id: "$city", totalavg: {$avg: "$salary"}}}
 ])
+
+// without group by sum avg max min
+db.employee.aggregate([
+{$group: {_id: "$city", totalmax: {$max: "$salary"}}}
+])
+
+db.employee.aggregate([
+{$group: {_id: "$city", totalmin: {$min: "$salary"}}}
+])
 ```
