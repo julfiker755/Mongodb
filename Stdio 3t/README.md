@@ -3,6 +3,7 @@
 2. [Select all data](#2-mongobd-find)
 3. [Row Count](#3-mongobd-row-count)
 4. [sorting](#4-mongobd-sorting)
+4. [limit](#5-Mongobd-limit)
 
 
 # 1. Mongobd insert
@@ -54,5 +55,16 @@ db.products.find((}).sort({salary:1}) // Asending
 //mongobd  aggregate use
 db.products.aggregate ([{$sort:{salary:1}}]) //Asending
 db.products.aggregate([{$sort:{salary:-1}}]) // Descending
+
+```
+# 5. Mongobd limit
+
+```js
+// Mongobd limit
+db.Monthbaget.find({}).limit(2)
+//Mongobd aggregate  use
+db.Monthbaget.aggregate([
+{$limit:3}
+])
 
 ```
