@@ -8,6 +8,7 @@
 7. [Select like](#7-Select-like)
 8. [select by match in](#8-Select-by-match-in)
 9. [Projection](#9-Projection)
+10. [skip,limit](#10-skip-limit)
 
 
 # 1. Mongobd insert
@@ -150,6 +151,17 @@ db.products.find({},{_id: 0, name: 1, designation: 1})
 //Mongobd aggregate use
 db.employee.aggregate([
 {$project: {_id: 0, name: 1, designation: 1}}
+])
+# 10. skip limit
+
+```js
+//  skip limit
+db.products.find({}).skip (0*3).limit (3)
+
+//Mongobd aggregate use
+db.products.aggregate ([
+{$skip: 0},
+{$limit:3}
 ])
 
 ```
