@@ -223,7 +223,7 @@ db.products.aggregate
 [
 {$group:
   {
-     _id:',
+     _id:'',
      avg: {$avg: "$salary"},
      sum: {$sum:"$salary"},
      max: {$max:"$salary"}, 
