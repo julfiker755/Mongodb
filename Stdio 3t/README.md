@@ -1,6 +1,6 @@
 ## Table of Contents
 1. [Mongobd insert](#1-mongobd-insert)
-2. [Select all data](#2-mongobd-find)
+2. [Select all data/query](#2-mongobd-find)
 3. [Row Count](#3-mongobd-row-count)
 4. [sorting](#4-mongobd-sorting)
 5. [limit](#5-Mongobd-limit)
@@ -32,8 +32,14 @@ db.foods.insertMany({[
 # 2. Mongobd find
 
 ```js
-// Mongobd find/aggregate
+// Mongobd query
+db.barand.find({})
+// Mongobd query/aggregate
+db.barand.aggregate([
+{$match:{}}
+])
 
+// Mongobd find/aggregate
 db.barand.find({})
 db.barand.find({}).toArray()
 db.barand.aggregate([])
