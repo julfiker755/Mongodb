@@ -216,6 +216,21 @@ db.employee.aggregate
       }
    }
 ])
+
+
+// group by sum,avg,min,max
+db.products.aggregate
+[
+{$group:
+  {
+     _id:',
+     avg: {$avg: "$salary"},
+     sum: {$sum:"$salary"},
+     max: {$max:"$salary"}, 
+     min: {$min: "$salary"},
+      }
+   }
+])
 ```
 
 # 12. Lookup
