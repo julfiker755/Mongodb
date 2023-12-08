@@ -243,7 +243,8 @@ db.products.aggregate([
 
 // Join By lookup operator
 db.products.aggregate([
-{$lookup:{from: "categories",localField:"CategoryID", foreignField:"CategoryID", as: "catDetails"}},
+// categories ফোল্ডার যে আইডি আছে সেই আইডিটা foreignField আইডি হবে
+{$lookup:{from: "categories",localField:"CategoryID", foreignField:"_id", as: "catDetails"}},
 {$lookup: {from: "brands",localField: "BrandID", foreignField: "BrandID", as: "brandDetails"}}
 ])
 
