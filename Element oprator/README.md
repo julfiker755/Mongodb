@@ -35,4 +35,8 @@ use( 'Shop')
 db.brands. find({
 salary: {$type:2}
 })
+// example anator
+db.brands. find({
+salary: {$type:'string'}
+})
 ```
