@@ -9,6 +9,6 @@
 
 
 
-# mongobd/mongoose pratic base toool
+# mongobd/mongoose pratic base tool
  - Studio 3T
  - nosqlbooster4
