@@ -1,4 +1,4 @@
-> Comparison Query Operator
+> Comparison Query Operator->[Mongodb oprator](https://www.mongodb.com/docs/manual/reference/operator/)
 
 ```sh
 $in: In Operator
