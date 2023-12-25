@@ -9,6 +9,7 @@ $gt: Greater Than Operator
 $gte: Greater Than or Equal To Operator
 $lt: Less Than Operator
 $lte:Less Than or Equel To Operetor
+$gt/$lt: Greater than / Less Than Operator
 ```
 
 ```js
@@ -68,6 +69,7 @@ db.employee.find(
     }
 )
 ```
+
 ```js
 //  $lte:Less Than or Equel To Operetor
 db.employee.find(
@@ -75,4 +77,14 @@ db.employee.find(
         salary:{$lte:400}
     }
 )
+```
+
+```js
+// $gt/$lt: Greater than / Less Than Operator
+db.pratic.find(
+     {
+        age:{$gt:18,$lt:30}
+     }
+)
+
 ```
