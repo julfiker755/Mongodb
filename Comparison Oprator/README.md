@@ -23,7 +23,7 @@ db.employee.find(
 // example anator
 db.practice.find(
 {
-   gender:'Female',age:{$in:[18,30,20]
+   gender:'Female',age:{$in:[18,20]
 }
 )
 ```
