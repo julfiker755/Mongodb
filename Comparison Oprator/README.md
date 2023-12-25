@@ -19,6 +19,13 @@ db.employee.find(
         salary:{$in:[4000,500,600]}
     }
 )
+
+// example anator
+db.practice.find(
+{
+   gender:'Female',age:{$in:[18,30,20]
+}
+)
 ```
 ```js
 // $nin: Not In Operator
@@ -26,6 +33,12 @@ db.employee.find(
     {
         salary:{$nin:[4000,500,600]}
     }
+)
+// example anator
+db.practice.find(
+{
+   gender:'Female',age:{$nin:[18,30,20]
+}
 )
 ```
 
